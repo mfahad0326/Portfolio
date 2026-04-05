@@ -656,17 +656,43 @@ function loadSaved(page) {
 }
 
 /* ═══════════════════════════════════════════════════════
-   CONTACT FORM
+   CONTACT FORM — Web3Forms (real email delivery)
 ═══════════════════════════════════════════════════════ */
-function sendForm() {
-  const n=(document.getElementById('fname')?.value||'').trim();
-  const e=(document.getElementById('femail')?.value||'').trim();
-  const m=(document.getElementById('fmsg')?.value||'').trim();
-  if(!n||!e||!m){alert('Please fill in all required fields.');return;}
-  const sm=document.getElementById('smsg');
-  if(sm) sm.style.display='block';
-  ['fname','femail','fmsg','fservice'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+async function handleFormSubmit(e) {
+  e.preventDefault();
+  const form   = document.getElementById('contactForm');
+  const btn    = document.getElementById('submitBtn');
+  const smsg   = document.getElementById('smsg');
+  const errmsg = document.getElementById('errmsg');
+
+  btn.disabled = true;
+  btn.querySelector('span').textContent = '// SENDING...';
+  smsg.style.display   = 'none';
+  errmsg.style.display = 'none';
+
+  try {
+    const res  = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(form)
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      smsg.style.display = 'block';
+      form.reset();
+    } else {
+      errmsg.style.display = 'block';
+    }
+  } catch (err) {
+    errmsg.style.display = 'block';
+  } finally {
+    btn.disabled = false;
+    btn.querySelector('span').textContent = '↗ SEND MESSAGE';
+  }
 }
+
+/* legacy stub so old pages don't throw errors */
+function sendForm() { handleFormSubmit({ preventDefault: ()=>{} }); }
 
 /* ═══════════════════════════════════════════════════════
    PHOTO UPDATE (about page)
