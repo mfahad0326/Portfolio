@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>M.Fahad — Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor-dot" id="cdot"></div>
+<div class="cursor-ring" id="cring"></div>
+<nav>
+  <a href="index.html" class="nav-logo">M.FAHAD</a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-page="home">Home</a></li>
+    <li><a href="about.html"    data-page="about">About</a></li>
+    <li><a href="skills.html"   data-page="skills">Skills</a></li>
+    <li><a href="projects.html" data-page="projects">Projects</a></li>
+    <li><a href="contact.html"  data-page="contact">Contact</a></li>
+    <li><a href="experience.html" data-page="experience">Experience</a></li>
+    <li><a href="services.html"   data-page="services">Services</a></li>
+    <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+  </ul>
+</nav>
+
+
+<div class="page-wrap">
+  <div class="section-label">06 — WHAT I OFFER</div>
+  <h1 class="page-title">My <span>Services</span></h1>
+  <div class="services-grid" id="svcGrid">
+    <div class="svc-card c1"><div class="item-actions"><button class="act-btn upd" onclick="this.closest('.svc-card').querySelector('input[type=file]').click()">📷 PHOTO</button><button class="act-btn del" onclick="this.closest('.svc-card').remove()">✕</button><input type="file" accept="image/*" style="display:none" onchange="addSvcPhoto(this)"></div><span class="svc-icon" data-editable="sv1i">🌐</span><div class="svc-title" data-editable="sv1t">WordPress Web Development</div><p class="svc-desc" data-editable="sv1d">Professional WordPress websites from scratch. Custom themes, plugin development, WooCommerce, Elementor/Divi, SEO optimization, and full deployment. UAE-based and international client experience.</p><div class="svc-tags"><span class="pstag cyan">WordPress</span><span class="pstag cyan">WooCommerce</span><span class="pstag">Elementor</span></div><div class="svc-price" data-editable="sv1n">// 3 YEARS PROFESSIONAL EXPERIENCE</div></div>
+    <div class="svc-card c2"><div class="item-actions"><button class="act-btn upd" onclick="this.closest('.svc-card').querySelector('input[type=file]').click()">📷 PHOTO</button><button class="act-btn del" onclick="this.closest('.svc-card').remove()">✕</button><input type="file" accept="image/*" style="display:none" onchange="addSvcPhoto(this)"></div><span class="svc-icon" data-editable="sv2i">🎨</span><div class="svc-title" data-editable="sv2t">Graphic Design &amp; Branding</div><p class="svc-desc" data-editable="sv2d">Logo design for businesses and individuals, business cards, company branding, social media graphics, posters, banners, and advertisement design. Photoshop, Illustrator, Canva.</p><div class="svc-tags"><span class="pstag pink">Logo Design</span><span class="pstag pink">Branding</span><span class="pstag pink">Photoshop</span></div><div class="svc-price" style="color:var(--pink);" data-editable="sv2n">// 4 YEARS · INTERMEDIATE LEVEL</div></div>
+    <div class="svc-card c3"><div class="item-actions"><button class="act-btn upd" onclick="this.closest('.svc-card').querySelector('input[type=file]').click()">📷 PHOTO</button><button class="act-btn del" onclick="this.closest('.svc-card').remove()">✕</button><input type="file" accept="image/*" style="display:none" onchange="addSvcPhoto(this)"></div><span class="svc-icon" data-editable="sv3i">🎬</span><div class="svc-title" data-editable="sv3t">Photo &amp; Video Editing</div><p class="svc-desc" data-editable="sv3d">Professional photo retouching, color grading, and advertisement editing. Video editing for social media, YouTube, and promotional content — cuts, motion graphics, and color correction.</p><div class="svc-tags"><span class="pstag green">Photo Edit</span><span class="pstag green">Video Edit</span><span class="pstag green">Ads</span></div><div class="svc-price" style="color:var(--green);" data-editable="sv3n">// 4 YEARS EXPERIENCE</div></div>
+    <div class="svc-card c4"><div class="item-actions"><button class="act-btn upd" onclick="this.closest('.svc-card').querySelector('input[type=file]').click()">📷 PHOTO</button><button class="act-btn del" onclick="this.closest('.svc-card').remove()">✕</button><input type="file" accept="image/*" style="display:none" onchange="addSvcPhoto(this)"></div><span class="svc-icon" data-editable="sv4i">📐</span><div class="svc-title" data-editable="sv4t">UI/UX Design</div><p class="svc-desc" data-editable="sv4d">User interface and experience design for web and mobile. Wireframing, prototyping, high-fidelity mockups, and design systems. Focus on usability, accessibility, and visual appeal using Figma.</p><div class="svc-tags"><span class="pstag yellow">Figma</span><span class="pstag yellow">Wireframes</span><span class="pstag yellow">Prototyping</span></div><div class="svc-price" style="color:var(--yellow);" data-editable="sv4n">// ONGOING · FREELANCE</div></div>
+    <div class="svc-card c5"><div class="item-actions"><button class="act-btn upd" onclick="this.closest('.svc-card').querySelector('input[type=file]').click()">📷 PHOTO</button><button class="act-btn del" onclick="this.closest('.svc-card').remove()">✕</button><input type="file" accept="image/*" style="display:none" onchange="addSvcPhoto(this)"></div><span class="svc-icon" data-editable="sv5i">🖥️</span><div class="svc-title" data-editable="sv5t">IT Support &amp; OS Services</div><p class="svc-desc" data-editable="sv5d">OS installation and configuration for Windows and Linux. VirtualBox VM setup, system troubleshooting, networking configuration (LAN/WAN/Router), and general IT support.</p><div class="svc-tags"><span class="pstag">Windows</span><span class="pstag">Linux</span><span class="pstag">Networking</span></div><div class="svc-price" data-editable="sv5n">// OS · NETWORKING · SUPPORT</div></div>
+    <div class="svc-card c6"><div class="item-actions"><button class="act-btn upd" onclick="this.closest('.svc-card').querySelector('input[type=file]').click()">📷 PHOTO</button><button class="act-btn del" onclick="this.closest('.svc-card').remove()">✕</button><input type="file" accept="image/*" style="display:none" onchange="addSvcPhoto(this)"></div><span class="svc-icon" data-editable="sv6i">📊</span><div class="svc-title" data-editable="sv6t">Data Entry &amp; MS Office</div><p class="svc-desc" data-editable="sv6d">Accurate and fast data entry, data management, spreadsheet creation, and MS Office document preparation (Word, Excel, PowerPoint). 3+ years, intermediate to advanced proficiency.</p><div class="svc-tags"><span class="pstag cyan">MS Excel</span><span class="pstag cyan">MS Word</span><span class="pstag cyan">Data Entry</span></div><div class="svc-price" data-editable="sv6n">// 3+ YEARS · ADVANCED</div></div>
+  </div>
+  <div class="add-new-row"><button class="add-new-btn" onclick="openAddModal('service')">+ ADD NEW SERVICE</button></div>
+  <div style="text-align:center;padding:64px 0 0;border-top:1px solid var(--border);margin-top:60px;">
+    <div class="section-label" style="justify-content:center;">READY TO START?</div>
+    <h2 style="font-family:'Orbitron',sans-serif;font-size:clamp(20px,3vw,34px);font-weight:700;color:#fff;margin-bottom:14px;letter-spacing:2px;">Let's Work <span style="color:var(--cyan)">Together</span></h2>
+    <p style="color:#c0ddf0;max-width:480px;margin:0 auto 32px;font-size:16px;line-height:1.8;" data-editable="svc_cta">Available for freelance projects, collaborations, and part-time work. Contact me and let's discuss your requirements.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn-neon">↗ CONTACT ME</a>
+      <a href="projects.html" class="btn-neon pink">VIEW MY WORK</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:start;">
+
+    <!-- LEFT: Brand -->
+    <div>
+      <a href="index.html" style="font-family:'Orbitron',sans-serif;font-size:22px;font-weight:900;color:#00f5ff;letter-spacing:6px;text-shadow:0 0 20px #00f5ff;display:block;margin-bottom:8px;text-decoration:none;">M.FAHAD</a>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;">Cyber Security Student &amp; IT Professional</div>
+    </div>
+
+    <!-- CENTER: Nav 3x3 grid -->
+    <div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#ff006e;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">Quick Links</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+        <a href="index.html"      style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Home</a>
+        <a href="about.html"     style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">About</a>
+        <a href="skills.html"    style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Skills</a>
+        <a href="projects.html"  style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Projects</a>
+        <a href="experience.html" style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Exp</a>
+        <a href="services.html"  style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Services</a>
+        <a href="contact.html"   style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;grid-column:1/-1;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Contact</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact -->
+    <div style="text-align:right;">
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#ff006e;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">Contact</div>
+      <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;margin-bottom:8px;"><a href="mailto:info.mfahad1@gmail.com" style="color:#00f5ff;text-decoration:none;">info.mfahad1@gmail.com</a></p>
+      <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;margin-bottom:16px;"><a href="tel:03266046448" style="color:#b8d8f0;text-decoration:none;">0326-6046448</a></p>
+      <button class="footer-edit-btn" id="footerEditBtn">
+        <span class="edit-dot"></span><span class="eb-text">EDIT MODE</span>
+      </button>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 M.Fahad Qayyum. All Rights Reserved.</p>
+    <p><a href="https://mfahad.xo.je" target="_blank" style="color:var(--cyan);text-decoration:none;">www.mfahad.xo.je</a></p>
+  </div>
+</footer>
+
+<!-- LOGIN -->
+<div id="loginOverlay">
+  <div class="login-box">
+    <div class="login-title">// ADMIN ACCESS</div>
+    <div class="login-sub">ENTER CREDENTIALS TO EDIT PORTFOLIO</div>
+    <div class="login-field"><label>USERNAME</label><input type="text" id="loginUser" placeholder="username" autocomplete="off"></div>
+    <div class="login-field"><label>PASSWORD</label><input type="password" id="loginPass" placeholder="••••••••" autocomplete="off"></div>
+    <div class="login-err" id="loginErr"></div>
+    <button class="login-submit" id="loginSubmitBtn"><span>↗ AUTHENTICATE</span></button>
+    <button class="login-cancel" id="loginCancelBtn">CANCEL</button>
+  </div>
+</div>
+<!-- ADD MODAL -->
+<div id="addModal">
+  <div class="modal-box">
+    <div class="modal-title" id="modalTitle">Add <span>Item</span></div>
+    <div id="modalFields"></div>
+    <div class="modal-btns">
+      <button class="modal-save" id="modalSaveBtn"><span>↗ SAVE</span></button>
+      <button class="modal-cancel" id="modalCancelBtn">CANCEL</button>
+    </div>
+  </div>
+</div>
+<!-- DETAIL PANEL -->
+<div class="detail-panel" id="detailPanel">
+  <button class="dp-close" id="dpCloseBtn">✕</button>
+  <div class="dp-tag"></div>
+  <div class="dp-title"></div>
+  <img class="dp-img" alt="" style="display:none;">
+  <div class="dp-desc"></div>
+  <div class="dp-tags"></div>
+  <div id="dpRows"></div>
+</div>
+
+<script src="script.js"></script>
+<script>portfolioInit('services');function addSvcPhoto(i){const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=e=>{const img=document.createElement('img');img.src=e.target.result;img.style.cssText='width:100%;height:120px;object-fit:cover;margin-bottom:14px;border:1px solid var(--border);display:block;';i.closest('.svc-card').insertBefore(img,i.closest('.svc-card').querySelector('.svc-icon'));};r.readAsDataURL(f);}
+</script>
+</body>
+</html>

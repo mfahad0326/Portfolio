@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>M.Fahad — Projects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor-dot" id="cdot"></div>
+<div class="cursor-ring" id="cring"></div>
+<nav>
+  <a href="index.html" class="nav-logo">M.FAHAD</a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-page="home">Home</a></li>
+    <li><a href="about.html"    data-page="about">About</a></li>
+    <li><a href="skills.html"   data-page="skills">Skills</a></li>
+    <li><a href="projects.html" data-page="projects">Projects</a></li>
+    <li><a href="contact.html"  data-page="contact">Contact</a></li>
+    <li><a href="experience.html" data-page="experience">Experience</a></li>
+    <li><a href="services.html"   data-page="services">Services</a></li>
+    <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+  </ul>
+</nav>
+
+
+<div class="page-wrap">
+  <div class="section-label">02 — MY WORK</div>
+  <h1 class="page-title">Featured <span>Projects</span></h1>
+
+  <div class="proj-grid" id="projGrid">
+    <!-- FEATURED -->
+    <div class="proj-card featured">
+      <div class="feat-badge">★ TOP PROJECT</div>
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#04001a,#0a0030,#0d1040);">
+        <svg width="110" height="110" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="none" stroke="#00f5ff" stroke-width="1" opacity=".4" stroke-dasharray="8 4"/><circle cx="60" cy="60" r="35" fill="none" stroke="#bf00ff" stroke-width="1" opacity=".3"/><polygon points="60,20 95,42 95,78 60,100 25,78 25,42" fill="none" stroke="#00f5ff" stroke-width="1.5" opacity=".5"/><circle cx="60" cy="60" r="10" fill="none" stroke="#00f5ff" stroke-width="2"/><circle cx="60" cy="60" r="4" fill="#00f5ff"/><circle cx="60" cy="10" r="4" fill="#00f5ff" opacity=".9"/><circle cx="110" cy="42" r="3" fill="#bf00ff" opacity=".9"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.proj-card').querySelector('input[type=file]').click()">📷 UPDATE PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.proj-card').remove()">✕ DELETE</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateStaticThumb(this)">
+        </div>
+        <div class="proj-tag"  data-editable="f_tag">UX/UI DESIGN — PORTFOLIO</div>
+        <div class="proj-name" data-editable="f_name">MFAHAD.XO.JE — Personal Portfolio</div>
+        <p class="proj-desc"   data-editable="f_desc">My flagship personal portfolio website showcasing design and development work. Built with a futuristic cyberpunk aesthetic featuring smooth animations, responsive layouts, and a bold visual identity.</p>
+        <div class="proj-stack"><span class="pstag cyan">HTML/CSS</span><span class="pstag cyan">JavaScript</span><span class="pstag pink">UI/UX</span><span class="pstag">Responsive</span></div>
+        <div class="proj-links"><a href="https://mfahad.xo.je" target="_blank" class="proj-link">↗ LIVE SITE</a></div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#001420,#002a3a,#001428);">
+        <svg width="80" height="80" viewBox="0 0 90 90"><rect x="10" y="10" width="70" height="70" fill="none" stroke="#00ff9f" stroke-width="1.5" opacity=".45"/><circle cx="45" cy="45" r="8" fill="none" stroke="#00ff9f" stroke-width="2"/><circle cx="45" cy="45" r="3" fill="#00ff9f"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.proj-card').querySelector('input[type=file]').click()">📷 PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.proj-card').remove()">✕</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateStaticThumb(this)">
+        </div>
+        <div class="proj-tag"  data-editable="p2t">PORTFOLIO SITE</div>
+        <div class="proj-name" data-editable="p2n">MRFAHAD.NETLIFY.APP</div>
+        <p class="proj-desc"   data-editable="p2d">Personal portfolio on Netlify. Projects, skills, and contact with modern layout and fast load times.</p>
+        <div class="proj-stack"><span class="pstag cyan">HTML</span><span class="pstag cyan">CSS</span><span class="pstag">Netlify</span></div>
+        <div class="proj-links"><a href="https://mrfahad.netlify.app" target="_blank" class="proj-link" style="color:var(--green);border-color:rgba(0,255,159,.3)">↗ LIVE</a></div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#1a0010,#300020,#1a0030);">
+        <svg width="80" height="80" viewBox="0 0 90 90"><polygon points="45,8 82,28 82,62 45,82 8,62 8,28" fill="none" stroke="#ff006e" stroke-width="1.5" opacity=".5"/><circle cx="45" cy="45" r="6" fill="#ff006e" opacity=".85"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.proj-card').querySelector('input[type=file]').click()">📷 PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.proj-card').remove()">✕</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateStaticThumb(this)">
+        </div>
+        <div class="proj-tag"  data-editable="p3t">WEB PROJECT</div>
+        <div class="proj-name" data-editable="p3n">CYBERVENOMS.NETLIFY.APP</div>
+        <p class="proj-desc"   data-editable="p3d">Cyberpunk-themed web project with bold visual design, dark aesthetics, and creative front-end effects.</p>
+        <div class="proj-stack"><span class="pstag pink">HTML</span><span class="pstag pink">CSS</span><span class="pstag pink">JS</span></div>
+        <div class="proj-links"><a href="https://cybervenoms.netlify.app" target="_blank" class="proj-link" style="color:var(--pink);border-color:rgba(255,0,110,.3)">↗ LIVE</a></div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#0d1200,#1a2000,#0d1800);">
+        <svg width="80" height="80" viewBox="0 0 90 90"><rect x="12" y="18" width="66" height="54" rx="4" fill="none" stroke="#ffea00" stroke-width="1.5" opacity=".4"/><line x1="12" y1="30" x2="78" y2="30" stroke="#ffea00" stroke-width=".8" opacity=".35"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.proj-card').querySelector('input[type=file]').click()">📷 PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.proj-card').remove()">✕</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateStaticThumb(this)">
+        </div>
+        <div class="proj-tag"  data-editable="p4t">BLOG / CONTENT</div>
+        <div class="proj-name" data-editable="p4n">MFPAKISTAN1.BLOGSPOT.COM</div>
+        <p class="proj-desc"   data-editable="p4d">Tech and lifestyle blog covering Pakistani digital trends, tech tutorials, and creative content for local audiences.</p>
+        <div class="proj-stack"><span class="pstag yellow">Blogger</span><span class="pstag yellow">SEO</span><span class="pstag yellow">Content</span></div>
+        <div class="proj-links"><a href="https://mfpakistan1.blogspot.com" target="_blank" class="proj-link" style="color:var(--yellow);border-color:rgba(255,234,0,.3)">↗ LIVE</a></div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#100020,#200040,#100030);">
+        <svg width="80" height="80" viewBox="0 0 90 90"><rect x="15" y="20" width="60" height="50" rx="6" fill="none" stroke="#bf00ff" stroke-width="1.5" opacity=".5"/><rect x="25" y="30" width="40" height="12" rx="3" fill="rgba(191,0,255,0.2)" stroke="#bf00ff" stroke-width=".8" opacity=".6"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.proj-card').querySelector('input[type=file]').click()">📷 PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.proj-card').remove()">✕</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateStaticThumb(this)">
+        </div>
+        <div class="proj-tag"  data-editable="p5t">UI/UX DESIGN</div>
+        <div class="proj-name" data-editable="p5n">UI/UX DESIGN WORK</div>
+        <p class="proj-desc"   data-editable="p5d">Wireframes, prototypes, and high-fidelity UI designs for web and mobile with a user-centered, visual-first approach.</p>
+        <div class="proj-stack"><span class="pstag">Figma</span><span class="pstag">UI Design</span><span class="pstag">Prototyping</span></div>
+        <div class="proj-links"><a href="contact.html" class="proj-link" style="color:var(--purple);border-color:rgba(191,0,255,.3)">↗ INQUIRE</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="add-new-row"><button class="add-new-btn" onclick="openAddModal('project')">+ ADD NEW PROJECT</button></div>
+
+  <!-- OTHER PROJECTS -->
+  <div class="custom-section">
+    <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--pink);letter-spacing:4px;margin-bottom:6px;">// MORE WORK</div>
+    <div style="font-family:'Orbitron',sans-serif;font-size:20px;font-weight:700;color:#fff;letter-spacing:2px;margin-bottom:24px;">Other <span style="color:var(--cyan)">Projects</span></div>
+    <div class="custom-grid" id="customGrid">
+      <div class="custom-slot">
+        <div class="slot-num">01</div>
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.custom-slot').querySelector('input[type=file]').click()">📷 PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.custom-slot').remove()">✕</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateSlotThumb(this)">
+        </div>
+        <div class="proj-name" data-editable="cs1n" style="margin-top:20px;">Your Project Title</div>
+        <p class="proj-desc"   data-editable="cs1d">Add your description here...</p>
+        <div class="proj-stack"><span class="pstag cyan" data-editable="cs1t1">Tag 1</span><span class="pstag pink" data-editable="cs1t2">Tag 2</span></div>
+      </div>
+      <div class="custom-slot">
+        <div class="slot-num">02</div>
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.custom-slot').querySelector('input[type=file]').click()">📷 PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.custom-slot').remove()">✕</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateSlotThumb(this)">
+        </div>
+        <div class="proj-name" data-editable="cs2n" style="margin-top:20px;">Your Project Title</div>
+        <p class="proj-desc"   data-editable="cs2d">Add your description here...</p>
+        <div class="proj-stack"><span class="pstag cyan" data-editable="cs2t1">Tag 1</span><span class="pstag pink" data-editable="cs2t2">Tag 2</span></div>
+      </div>
+      <div class="custom-slot">
+        <div class="slot-num">03</div>
+        <div class="item-actions">
+          <button class="act-btn upd" onclick="this.closest('.custom-slot').querySelector('input[type=file]').click()">📷 PHOTO</button>
+          <button class="act-btn del" onclick="this.closest('.custom-slot').remove()">✕</button>
+          <input type="file" accept="image/*" style="display:none" onchange="updateSlotThumb(this)">
+        </div>
+        <div class="proj-name" data-editable="cs3n" style="margin-top:20px;">Your Project Title</div>
+        <p class="proj-desc"   data-editable="cs3d">Add your description here...</p>
+        <div class="proj-stack"><span class="pstag cyan" data-editable="cs3t1">Tag 1</span><span class="pstag pink" data-editable="cs3t2">Tag 2</span></div>
+      </div>
+    </div>
+    <div class="add-new-row"><button class="add-new-btn" onclick="openAddModal('custom')">+ ADD OTHER PROJECT</button></div>
+  </div>
+</div>
+
+<footer>
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:start;">
+
+    <!-- LEFT: Brand -->
+    <div>
+      <a href="index.html" style="font-family:'Orbitron',sans-serif;font-size:22px;font-weight:900;color:#00f5ff;letter-spacing:6px;text-shadow:0 0 20px #00f5ff;display:block;margin-bottom:8px;text-decoration:none;">M.FAHAD</a>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;">Cyber Security Student &amp; IT Professional</div>
+    </div>
+
+    <!-- CENTER: Nav 3x3 grid -->
+    <div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#ff006e;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">Quick Links</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+        <a href="index.html"      style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Home</a>
+        <a href="about.html"     style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">About</a>
+        <a href="skills.html"    style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Skills</a>
+        <a href="projects.html"  style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Projects</a>
+        <a href="experience.html" style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Exp</a>
+        <a href="services.html"  style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Services</a>
+        <a href="contact.html"   style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;grid-column:1/-1;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Contact</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact -->
+    <div style="text-align:right;">
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#ff006e;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">Contact</div>
+      <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;margin-bottom:8px;"><a href="mailto:info.mfahad1@gmail.com" style="color:#00f5ff;text-decoration:none;">info.mfahad1@gmail.com</a></p>
+      <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;margin-bottom:16px;"><a href="tel:03266046448" style="color:#b8d8f0;text-decoration:none;">0326-6046448</a></p>
+      <button class="footer-edit-btn" id="footerEditBtn">
+        <span class="edit-dot"></span><span class="eb-text">EDIT MODE</span>
+      </button>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 M.Fahad Qayyum. All Rights Reserved.</p>
+    <p><a href="https://mfahad.xo.je" target="_blank" style="color:var(--cyan);text-decoration:none;">www.mfahad.xo.je</a></p>
+  </div>
+</footer>
+
+<!-- LOGIN -->
+<div id="loginOverlay">
+  <div class="login-box">
+    <div class="login-title">// ADMIN ACCESS</div>
+    <div class="login-sub">ENTER CREDENTIALS TO EDIT PORTFOLIO</div>
+    <div class="login-field"><label>USERNAME</label><input type="text" id="loginUser" placeholder="username" autocomplete="off"></div>
+    <div class="login-field"><label>PASSWORD</label><input type="password" id="loginPass" placeholder="••••••••" autocomplete="off"></div>
+    <div class="login-err" id="loginErr"></div>
+    <button class="login-submit" id="loginSubmitBtn"><span>↗ AUTHENTICATE</span></button>
+    <button class="login-cancel" id="loginCancelBtn">CANCEL</button>
+  </div>
+</div>
+<!-- ADD MODAL -->
+<div id="addModal">
+  <div class="modal-box">
+    <div class="modal-title" id="modalTitle">Add <span>Item</span></div>
+    <div id="modalFields"></div>
+    <div class="modal-btns">
+      <button class="modal-save" id="modalSaveBtn"><span>↗ SAVE</span></button>
+      <button class="modal-cancel" id="modalCancelBtn">CANCEL</button>
+    </div>
+  </div>
+</div>
+<!-- DETAIL PANEL -->
+<div class="detail-panel" id="detailPanel">
+  <button class="dp-close" id="dpCloseBtn">✕</button>
+  <div class="dp-tag"></div>
+  <div class="dp-title"></div>
+  <img class="dp-img" alt="" style="display:none;">
+  <div class="dp-desc"></div>
+  <div class="dp-tags"></div>
+  <div id="dpRows"></div>
+</div>
+
+<script src="script.js"></script>
+<script>portfolioInit('projects');
+function updateStaticThumb(input){
+  const file=input.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    const thumb=input.closest('.proj-card').querySelector('.proj-thumb');
+    thumb.innerHTML='<img src="'+e.target.result+'" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">';
+  };
+  reader.readAsDataURL(file);
+}
+function updateSlotThumb(input){
+  const file=input.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    const slot=input.closest('.custom-slot');
+    let img=slot.querySelector('.slot-img');
+    if(!img){img=document.createElement('div');img.className='slot-img';slot.insertBefore(img,slot.querySelector('.proj-name'));}
+    img.innerHTML='<img src="'+e.target.result+'" style="width:100%;height:100%;object-fit:cover;display:block;">';
+  };
+  reader.readAsDataURL(file);
+}
+
+</script>
+</body>
+</html>

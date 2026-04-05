@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.Fahad Qayyum — Cyber Security Student & IT Professional</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="cursor-dot" id="cdot"></div>
+<div class="cursor-ring" id="cring"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">M.FAHAD</a>
+  <ul class="nav-links">
+    <li><a href="index.html"    data-page="home">Home</a></li>
+    <li><a href="about.html"    data-page="about">About</a></li>
+    <li><a href="skills.html"   data-page="skills">Skills</a></li>
+    <li><a href="projects.html" data-page="projects">Projects</a></li>
+    <li><a href="contact.html"  data-page="contact">Contact</a></li>
+    <li><a href="experience.html" data-page="experience">Experience</a></li>
+    <li><a href="services.html"   data-page="services">Services</a></li>
+    <li><a href="contact.html" class="nav-hire">Hire Me</a></li>
+  </ul>
+</nav>
+
+
+
+<section id="hero">
+  <div class="hero-bg a"></div>
+  <div class="hero-bg b"></div>
+  <div class="hero-content">
+    <div class="hero-tag">BS CYBER SECURITY · SUPERIOR UNIVERSITY · 4TH SEMESTER</div>
+    <h1 class="name" data-text="M.FAHAD" data-editable="hero_name">M.FAHAD</h1>
+    <div class="hero-slogan" data-editable="hero_slogan">CYBER SECURITY STUDENT &amp; IT PROFESSIONAL</div>
+    <p class="hero-desc" data-editable="hero_desc">Motivated and detail-oriented Cyber Security student with strong skills in data management, graphic designing, and WordPress web development. Passionate about learning new technologies and delivering quality work.</p>
+    <div class="hero-btns">
+      <a href="projects.html" class="btn-neon">View Projects</a>
+      <a href="services.html" class="btn-neon pink">My Services</a>
+      <a href="contact.html"  class="btn-neon green">Hire Me</a>
+    </div>
+    <div class="stats-strip">
+      <div class="sstat"><div class="sstat-num" data-editable="s1n">3+</div><div class="sstat-lbl" data-editable="s1l">YRS WORDPRESS</div></div>
+      <div class="sstat"><div class="sstat-num" data-editable="s2n">4+</div><div class="sstat-lbl" data-editable="s2l">YRS DESIGN</div></div>
+      <div class="sstat"><div class="sstat-num" data-editable="s3n">5+</div><div class="sstat-lbl" data-editable="s3l">WEBSITES BUILT</div></div>
+      <div class="sstat"><div class="sstat-num" data-editable="s4n">6+</div><div class="sstat-lbl" data-editable="s4l">CERTIFICATES</div></div>
+    </div>
+  </div>
+  <div class="hero-geo">
+    <div class="hring"><div class="hdot"></div></div>
+    <div class="hring r2"><div class="hdot"></div></div>
+    <div class="hring r3"><div class="hdot"></div></div>
+    <div class="geo-mid"><div class="geo-av">MF</div></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<div style="position:relative;z-index:1;padding:72px 56px 0;max-width:1240px;margin:0 auto;">
+  <div class="section-label">EDUCATION</div>
+  <h2 class="page-title" style="font-size:clamp(22px,3vw,38px);margin-bottom:28px;">Academic <span>Background</span></h2>
+  <div class="edu-strip" id="eduContainer">
+    <div class="edu-card">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--cyan),var(--purple));"></div>
+      <div class="item-actions"><button class="act-btn del" onclick="this.closest('.edu-card').remove()">✕ REMOVE</button></div>
+      <div class="edu-year"   data-editable="edu1y">2024 — 2028 &nbsp;·&nbsp; ONGOING · 4TH SEMESTER</div>
+      <div class="edu-degree" data-editable="edu1d">BS in Cyber Security</div>
+      <div class="edu-inst"   data-editable="edu1i">Superior University, Lahore</div>
+      <div class="edu-note"   data-editable="edu1n">Specializing in network security, ethical hacking &amp; digital forensics</div>
+    </div>
+    <div class="edu-card" style="border-color:rgba(191,0,255,0.18);">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--pink),var(--purple));"></div>
+      <div class="item-actions"><button class="act-btn del" onclick="this.closest('.edu-card').remove()">✕ REMOVE</button></div>
+      <div class="edu-year"   style="color:var(--purple);" data-editable="edu2y">2022 — 2024</div>
+      <div class="edu-degree" data-editable="edu2d">Intermediate (ICS)</div>
+      <div class="edu-inst"   style="color:var(--purple);" data-editable="edu2i">KIPS College, Kasur</div>
+      <div class="edu-note"   data-editable="edu2n">Pre-Engineering · Computer Science</div>
+    </div>
+  </div>
+  <div class="add-new-row">
+    <button class="add-new-btn" onclick="openAddModal('edu')">+ ADD EDUCATION</button>
+  </div>
+</div>
+
+<!-- SERVICES PREVIEW -->
+<div style="position:relative;z-index:1;padding:64px 56px 0;max-width:1240px;margin:0 auto;">
+  <div class="section-label">SERVICES</div>
+  <h2 class="page-title" style="font-size:clamp(22px,3vw,38px);margin-bottom:28px;">What I <span>Offer</span></h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+    <a href="services.html" class="cyber-card" style="text-align:center;text-decoration:none;display:block;padding:26px 16px;">
+      <div style="font-size:30px;margin-bottom:12px;">🌐</div>
+      <div style="font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;color:#fff;letter-spacing:1px;margin-bottom:5px;">WordPress Dev</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#8ab8d8;letter-spacing:1px;">3 YRS PROFESSIONAL</div>
+    </a>
+    <a href="services.html" class="cyber-card" style="text-align:center;text-decoration:none;display:block;padding:26px 16px;">
+      <div style="font-size:30px;margin-bottom:12px;">🎨</div>
+      <div style="font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;color:#fff;letter-spacing:1px;margin-bottom:5px;">Graphic Design</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#8ab8d8;letter-spacing:1px;">LOGOS · BRANDING · ADS</div>
+    </a>
+    <a href="services.html" class="cyber-card" style="text-align:center;text-decoration:none;display:block;padding:26px 16px;">
+      <div style="font-size:30px;margin-bottom:12px;">🎬</div>
+      <div style="font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;color:#fff;letter-spacing:1px;margin-bottom:5px;">Photo &amp; Video</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#8ab8d8;letter-spacing:1px;">4 YRS EXPERIENCE</div>
+    </a>
+    <a href="services.html" class="cyber-card" style="text-align:center;text-decoration:none;display:block;padding:26px 16px;">
+      <div style="font-size:30px;margin-bottom:12px;">🔒</div>
+      <div style="font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;color:#fff;letter-spacing:1px;margin-bottom:5px;">IT &amp; Security</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#8ab8d8;letter-spacing:1px;">OS · NETWORKING</div>
+    </a>
+  </div>
+</div>
+
+
+<footer>
+  <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:start;">
+
+    <!-- LEFT: Brand -->
+    <div>
+      <a href="index.html" style="font-family:'Orbitron',sans-serif;font-size:22px;font-weight:900;color:#00f5ff;letter-spacing:6px;text-shadow:0 0 20px #00f5ff;display:block;margin-bottom:8px;text-decoration:none;">M.FAHAD</a>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;">Cyber Security Student &amp; IT Professional</div>
+    </div>
+
+    <!-- CENTER: Nav 3x3 grid -->
+    <div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#ff006e;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">Quick Links</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+        <a href="index.html"      style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Home</a>
+        <a href="about.html"     style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">About</a>
+        <a href="skills.html"    style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Skills</a>
+        <a href="projects.html"  style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Projects</a>
+        <a href="experience.html" style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Exp</a>
+        <a href="services.html"  style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Services</a>
+        <a href="contact.html"   style="font-family:'Share Tech Mono',monospace;font-size:12px;color:#b8d8f0;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:8px 6px;text-align:center;border:1px solid rgba(0,245,255,0.15);display:block;transition:all .2s;grid-column:1/-1;" onmouseover="this.style.color='#00f5ff';this.style.borderColor='rgba(0,245,255,0.5)';this.style.background='rgba(0,245,255,0.08)';this.style.textShadow='0 0 8px rgba(0,245,255,0.6)'" onmouseout="this.style.color='#b8d8f0';this.style.borderColor='rgba(0,245,255,0.15)';this.style.background='transparent';this.style.textShadow='none'">Contact</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact -->
+    <div style="text-align:right;">
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:#ff006e;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">Contact</div>
+      <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;margin-bottom:8px;"><a href="mailto:info.mfahad1@gmail.com" style="color:#00f5ff;text-decoration:none;">info.mfahad1@gmail.com</a></p>
+      <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#b8d8f0;letter-spacing:1px;margin-bottom:16px;"><a href="tel:03266046448" style="color:#b8d8f0;text-decoration:none;">0326-6046448</a></p>
+      <button class="footer-edit-btn" id="footerEditBtn">
+        <span class="edit-dot"></span><span class="eb-text">EDIT MODE</span>
+      </button>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 M.Fahad Qayyum. All Rights Reserved.</p>
+    <p><a href="https://mfahad.xo.je" target="_blank" style="color:var(--cyan);text-decoration:none;">www.mfahad.xo.je</a></p>
+  </div>
+</footer>
+
+<!-- LOGIN -->
+<div id="loginOverlay">
+  <div class="login-box">
+    <div class="login-title">// ADMIN ACCESS</div>
+    <div class="login-sub">ENTER CREDENTIALS TO EDIT PORTFOLIO</div>
+    <div class="login-field"><label>USERNAME</label><input type="text" id="loginUser" placeholder="username" autocomplete="off"></div>
+    <div class="login-field"><label>PASSWORD</label><input type="password" id="loginPass" placeholder="••••••••" autocomplete="off"></div>
+    <div class="login-err" id="loginErr"></div>
+    <button class="login-submit" id="loginSubmitBtn"><span>↗ AUTHENTICATE</span></button>
+    <button class="login-cancel" id="loginCancelBtn">CANCEL</button>
+  </div>
+</div>
+<!-- ADD MODAL -->
+<div id="addModal">
+  <div class="modal-box">
+    <div class="modal-title" id="modalTitle">Add <span>Item</span></div>
+    <div id="modalFields"></div>
+    <div class="modal-btns">
+      <button class="modal-save" id="modalSaveBtn"><span>↗ SAVE</span></button>
+      <button class="modal-cancel" id="modalCancelBtn">CANCEL</button>
+    </div>
+  </div>
+</div>
+<!-- DETAIL PANEL -->
+<div class="detail-panel" id="detailPanel">
+  <button class="dp-close" id="dpCloseBtn">✕</button>
+  <div class="dp-tag"></div>
+  <div class="dp-title"></div>
+  <img class="dp-img" alt="" style="display:none;">
+  <div class="dp-desc"></div>
+  <div class="dp-tags"></div>
+  <div id="dpRows"></div>
+</div>
+
+<script src="script.js"></script>
+<script>
+portfolioInit('index');
+
+
+</script>
+</body>
+</html>
